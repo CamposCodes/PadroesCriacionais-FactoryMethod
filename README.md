@@ -29,13 +29,11 @@ Projeto acadêmico da disciplina DCC078 — Aspectos Avançados em Engenharia de
 **Universidade:** Universidade Federal de Juiz de Fora (UFJF)  
 **Departamento:** Ciência da Computação (ICE)  
 **Disciplina:** DCC078 – Aspectos Avançados em Engenharia de Software  
-**Semestre:** 2025/3  
-**Docente:** Prof(a). [Nome do(a) Professor(a)]  
-**Data de entrega:** [Data]  
+**Semestre:** 2025/2  
+**Docente:** Prof. Marco Antonio Araujo]  
+**Data de entrega:** 02/10/2025  
 **Grupo:**
-  - [Seu Nome] (Matrícula)
-  - [Nome do colega] (Matrícula)
-  - [Nome do colega] (Matrícula)
+  - Gabriel Campos Lima Alves (202176005)
 
 ## 🎯 Objetivo <a name="objetivo"></a>
 Implementar o padrão **Factory Method** para validação algorítmica e formatação de documentos brasileiros (CPF, CNPJ, RG), promovendo desacoplamento, extensibilidade e robustez no código.
@@ -89,9 +87,6 @@ mvn test
 
 ## 👨‍💻 Autores <a name="autores"></a>
 Grupo:
-- [Seu Nome] (Matrícula)
-- [Nome do colega] (Matrícula)
-- [Nome do colega] (Matrícula)
-
+  - Gabriel Campos Lima Alves (202176005)
 ---
 *Projeto acadêmico — UFJF — Aspectos Avançados em Engenharia de Software*
