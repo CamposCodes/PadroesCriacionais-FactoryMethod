@@ -1,0 +1,8 @@
+padroescriacao/factorymethod/NotificadorWhatsApp.class
+padroescriacao/factorymethod/NotificadorPush.class
+padroescriacao/factorymethod/NotificadorEmail.class
+padroescriacao/factorymethod/NotificadorSMS.class
+padroescriacao/factorymethod/NotificadorTelegram.class
+padroescriacao/factorymethod/NotificacaoService.class
+padroescriacao/factorymethod/NotificadorFactory.class
+padroescriacao/factorymethod/INotificador.class

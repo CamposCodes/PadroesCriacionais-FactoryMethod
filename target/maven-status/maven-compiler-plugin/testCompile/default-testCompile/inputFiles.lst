@@ -1,0 +1,6 @@
+/workspaces/PadroesCriacionais-FactoryMethod/src/test/java/padroescriacao/factorymethod/NotificadorWhatsAppTest.java
+/workspaces/PadroesCriacionais-FactoryMethod/src/test/java/padroescriacao/factorymethod/NotificadorSMSTest.java
+/workspaces/PadroesCriacionais-FactoryMethod/src/test/java/padroescriacao/factorymethod/NotificadorFactoryTest.java
+/workspaces/PadroesCriacionais-FactoryMethod/src/test/java/padroescriacao/factorymethod/NotificacaoServiceTest.java
+/workspaces/PadroesCriacionais-FactoryMethod/src/test/java/padroescriacao/factorymethod/NotificadorEmailTest.java
+/workspaces/PadroesCriacionais-FactoryMethod/src/test/java/padroescriacao/factorymethod/NotificadorPushTest.java

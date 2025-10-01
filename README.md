@@ -1,4 +1,4 @@
-# Factory Method Pattern — Validação de Documentos
+# Factory Method Pattern — Sistema de Notificações Multi-Canal
 
 <p align="center">
   <a href="https://www.ufjf.br/" rel="noopener">
@@ -11,82 +11,111 @@
 ---
 
 ## 📝 Sumário
-- [Sobre](#about)
-- [Informações da Atividade](#work_info)
-- [Objetivo](#objetivo)
+- [Sobre](#sobre)
+- [Tecnologias](#tecnologias)
 - [Funcionalidades](#funcionalidades)
-- [Padrão Implementado](#padrao)
-- [Estrutura de Diretórios](#estrutura)
 - [Exemplo de Uso](#exemplo)
 - [Testes](#testes)
-- [Tecnologias](#tecnologias)
-- [Autores](#autores)
+- [Como Executar](#executar)
+- [Autor](#autor)
 
-## 🧐 Sobre <a name="about"></a>
-Projeto acadêmico da disciplina DCC078 — Aspectos Avançados em Engenharia de Software (UFJF/ICE). O objetivo é aplicar o padrão Factory Method para criar um sistema extensível de validação de documentos brasileiros (CPF, CNPJ, RG), com cobertura de testes e documentação.
+## 🧐 Sobre <a name="sobre"></a>
 
-## 📌 Informações da Atividade <a name="work_info"></a>
-**Universidade:** Universidade Federal de Juiz de Fora (UFJF)  
-**Departamento:** Ciência da Computação (ICE)  
+Projeto acadêmico da disciplina DCC078 — Aspectos Avançados em Engenharia de Software (UFJF/ICE).
+
 **Disciplina:** DCC078 – Aspectos Avançados em Engenharia de Software  
-**Semestre:** 2025/2  
-**Docente:** Prof. Marco Antonio Araujo]  
+**Docente:** Prof. Marco Antonio Araujo  
 **Data de entrega:** 02/10/2025  
-**Grupo:**
-  - Gabriel Campos Lima Alves (202176005)
+**Aluno:** Gabriel Campos Lima Alves (202176005)
 
-## 🎯 Objetivo <a name="objetivo"></a>
-Implementar o padrão **Factory Method** para validação algorítmica e formatação de documentos brasileiros (CPF, CNPJ, RG), promovendo desacoplamento, extensibilidade e robustez no código.
+### Padrão Factory Method
+
+Implementação do padrão **Factory Method** para criação de um sistema extensível de notificações multi-canal, suportando Email, SMS, Push Notification e WhatsApp.
+
+O **Factory Method** é um padrão criacional que define uma interface para criar objetos, mas permite que as subclasses decidam qual classe instanciar, demonstrando:
+
+- Criação dinâmica de objetos através de factory
+- Desacoplamento entre cliente e produtos concretos
+- Extensibilidade para novos tipos de notificadores
+
+##  Tecnologias <a name="tecnologias"></a>
+
+- **Java 17+**
+- **JUnit 5** - Framework de testes
+- **Maven** - Gerenciamento de dependências
+- **Git** - Controle de versão
 
 ## 🚀 Funcionalidades <a name="funcionalidades"></a>
-- Validação algorítmica de CPF, CNPJ e RG
-- Formatação automática de documentos
-- Tratamento robusto de exceções
-- Cobertura completa de testes com JUnit 5
 
-## 🏗️ Padrão Implementado <a name="padrao"></a>
-**Factory Method Pattern** — Permite criação de validadores específicos mantendo o código desacoplado e extensível.
+### Canais de Notificação Suportados
 
-## 📋 Estrutura de Diretórios <a name="estrutura"></a>
-```
-src/
-├── main/java/padroescriacao/factorymethod/
-│   ├── IValidadorDocumento.java         # Interface Product
-│   ├── ValidadorDocumentoFactory.java  # Creator (Factory)
-│   ├── ValidadorCPF.java               # ConcreteProduct
-│   ├── ValidadorCNPJ.java              # ConcreteProduct
-│   ├── ValidadorRG.java                # ConcreteProduct
-│   └── ... (exceções, utilitários)
-└── test/java/padroescriacao/factorymethod/
-    ├── ValidadorDocumentoFactoryTest.java
-    ├── ValidadorCPFTest.java
-    ├── ValidadorCNPJTest.java
-    └── ValidadorRGTest.java
-```
+- **Email**: Envio de notificações por email
+- **SMS**: Envio de notificações por SMS
+- **Push Notification**: Envio de notificações push para dispositivos
+- **WhatsApp**: Envio de notificações pelo WhatsApp
+
+### Recursos
+
+- ✅ Interface única para todos os notificadores
+- ✅ Criação dinâmica via Factory Method
+- ✅ Fácil extensão para novos canais
 
 ## 📊 Exemplo de Uso <a name="exemplo"></a>
 ```java
-DocumentoValidatorService service = new DocumentoValidatorService();
-boolean valido = service.validarDocumento("CPF", "111.444.777-35");
+// Usando a Factory diretamente
+INotificador email = NotificadorFactory.obterNotificador("Email");
+email.enviar("usuario@exemplo.com", "Sua mensagem aqui");
+
+// Usando através do Service (recomendado)
+NotificacaoService service = new NotificacaoService();
+service.enviarNotificacao("SMS", "11988887777", "Código: 1234");
+service.enviarNotificacao("WhatsApp", "+5511988887777", "Olá!");
+service.enviarNotificacao("Push", "token_dispositivo", "Nova atualização");
 ```
 
 ## 🧪 Testes <a name="testes"></a>
-- Testes de casos base e valores limite
-- Testes de exceção para entradas inválidas
-- Testes de cobertura para todos os validadores
-- Execução via Maven:
+
+### Cobertura de Testes
+
+- ✅ **Testes de Criação**: Validam que a factory cria os objetos corretos
+- ✅ **Testes de Comportamento**: Verificam funcionamento de cada notificador
+- ✅ **Testes de Integração**: Validam sistema completo através do service
+- ✅ **Testes de Exceção**: Cobrem cenários de notificadores inexistentes e inválidos
+
+**Total**: 14 testes automatizados
+
+### Executar Testes
+
 ```bash
 mvn test
 ```
 
-## 💻 Tecnologias <a name="tecnologias"></a>
-- Java 17+
-- JUnit 5
-- Maven
-- UML
+## 🚀 Como Executar <a name="executar"></a>
 
-## 👨‍💻 Autores <a name="autores"></a>
-Grupo:
-  - Gabriel Campos Lima Alves (202176005)
+### Pré-requisitos
+
+- Java 17 ou superior
+- Maven 3.6+
+
+### Comandos
+
+```bash
+# Compilar o projeto
+mvn clean compile
+
+# Executar testes
+mvn test
+
+# Empacotar
+mvn package
+```
+
+## �👨‍💻 Autor <a name="autor"></a>
+**Gabriel Campos Lima Alves**  
+Matrícula: 202176005  
+Email: campos.gabriel@estudante.ufjf.br  
+GitHub: [@CamposCodes](https://github.com/CamposCodes)
+
 ---
-*Projeto acadêmico — UFJF — Aspectos Avançados em Engenharia de Software*
+
+*Projeto de uso acadêmico exclusivo para a disciplina DCC078 - UFJF*
