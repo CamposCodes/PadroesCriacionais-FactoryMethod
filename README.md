@@ -1,4 +1,4 @@
-# Factory Method Pattern — Sistema de Notificações Multi-Canal
+# Factory Method — Notificador
 
 <p align="center">
   <a href="https://www.ufjf.br/" rel="noopener">
@@ -110,7 +110,7 @@ mvn test
 mvn package
 ```
 
-## �👨‍💻 Autor <a name="autor"></a>
+## 👨‍💻 Autor <a name="autor"></a>
 **Gabriel Campos Lima Alves**  
 Matrícula: 202176005  
 Email: campos.gabriel@estudante.ufjf.br  
