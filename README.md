@@ -16,50 +16,38 @@
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias](#tecnologias)
 - [Exemplo de Uso](#exemplo)
-- [Testes](#testes)
-- [Como Executar](#executar)
+- [Como Executar e Testes](#testes)
 - [Autor](#autor)
 
 ## 🧐 Sobre <a name="sobre"></a>
-
-Projeto acadêmico da disciplina DCC078 — Aspectos Avançados em Engenharia de Software (UFJF/ICE).
-
-**Disciplina:** DCC078 – Aspectos Avançados em Engenharia de Software  
-**Docente:** Prof. Marco Antonio Araujo  
-**Data de entrega:** 02/10/2025  
-**Aluno:** Gabriel Campos Lima Alves (202176005)
+> **Disciplina:** DCC078 – Aspectos Avançados em Engenharia de Software  
+> **Projeto:** Notificador Multi-Canal com Factory Method
+> **Docente:** Prof. Marco Antônio Pereira Araújo
+> **Data de entrega:** 02/10/2025  
+> **Aluno:** [Gabriel Campos Lima Alves](#autor)
 
 ### Padrão Factory Method
-
 Implementação do padrão **Factory Method** para criação de um sistema extensível de notificações multi-canal, suportando Email, SMS, Push Notification e WhatsApp.
-
 O **Factory Method** é um padrão criacional que define uma interface para criar objetos, mas permite que as subclasses decidam qual classe instanciar, demonstrando:
-
 - Criação dinâmica de objetos através de factory
 - Desacoplamento entre cliente e produtos concretos
 - Extensibilidade para novos tipos de notificadores
 
 ## 📐 Diagrama de Classe <a name="diagrama"></a>
-
 O diagrama abaixo representa a arquitetura do projeto, destacando a aplicação do padrão **Factory Method** no sistema de notificações:
 
 <p align="center">
   <img src="./Factorymethod-Notificador.png" alt="Diagrama de Classe - Factory Method Notificador" width="800"/>
 </p>
 
-
-
 ## 🚀 Funcionalidades <a name="funcionalidades"></a>
-
 ### Canais de Notificação Suportados
-
 - **Email**: Envio de notificações por email
 - **SMS**: Envio de notificações por SMS
 - **Push Notification**: Envio de notificações push para dispositivos
 - **WhatsApp**: Envio de notificações pelo WhatsApp
 
 ### Recursos
-
 - ✅ Interface única para todos os notificadores
 - ✅ Criação dinâmica via Factory Method
 - ✅ Fácil extensão para novos canais
@@ -84,31 +72,18 @@ service.enviarNotificacao("WhatsApp", "+5511988887777", "Olá!");
 service.enviarNotificacao("Push", "token_dispositivo", "Nova atualização");
 ```
 
-## 🧪 Testes <a name="testes"></a>
-
+## 🧪 Como Executar e Testes <a name="testes"></a>
 ### Cobertura de Testes
 - ✅ **Testes de Criação**: Validam que a factory cria os objetos corretos
 - ✅ **Testes de Comportamento**: Verificam funcionamento de cada notificador
 - ✅ **Testes de Integração**: Validam sistema completo através do service
 - ✅ **Testes de Exceção**: Cobrem cenários de notificadores inexistentes e inválidos
 
-**Total**: 14 testes automatizados
-
-### Executar Testes
-
-```bash
-mvn test
-```
-
-## 🚀 Como Executar <a name="executar"></a>
-
 ### Pré-requisitos
-
 - Java 17 ou superior
 - Maven 3.6+
 
 ### Comandos
-
 ```bash
 # Compilar o projeto
 mvn clean compile
