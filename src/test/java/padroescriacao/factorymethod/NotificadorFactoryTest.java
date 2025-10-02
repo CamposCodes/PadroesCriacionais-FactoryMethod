@@ -16,12 +16,11 @@ class NotificadorFactoryTest {
     }
 
     @Test
-    void deveRetornarExcecaoParaNotificadorInvalido() {
-        try {
-            INotificador notificador = NotificadorFactory.obterNotificador("Telegram");
-            fail();
-        } catch (IllegalArgumentException e) {
-            assertEquals("Notificador inválido", e.getMessage());
-        }
+    void deveCriarTodosOsNotificadores() {
+        assertNotNull(NotificadorFactory.obterNotificador("Email"));
+        assertNotNull(NotificadorFactory.obterNotificador("SMS"));
+        assertNotNull(NotificadorFactory.obterNotificador("Push"));
+        assertNotNull(NotificadorFactory.obterNotificador("WhatsApp"));
+        assertNotNull(NotificadorFactory.obterNotificador("Telegram"));
     }
 }

@@ -12,8 +12,9 @@
 
 ## 📝 Sumário
 - [Sobre](#sobre)
-- [Tecnologias](#tecnologias)
+- [Diagrama Nível de Projeto](#diagrama)
 - [Funcionalidades](#funcionalidades)
+- [Tecnologias](#tecnologias)
 - [Exemplo de Uso](#exemplo)
 - [Testes](#testes)
 - [Como Executar](#executar)
@@ -38,12 +39,15 @@ O **Factory Method** é um padrão criacional que define uma interface para cria
 - Desacoplamento entre cliente e produtos concretos
 - Extensibilidade para novos tipos de notificadores
 
-##  Tecnologias <a name="tecnologias"></a>
+## 📐 Diagrama de Classe <a name="diagrama"></a>
 
-- **Java 17+**
-- **JUnit 5** - Framework de testes
-- **Maven** - Gerenciamento de dependências
-- **Git** - Controle de versão
+O diagrama abaixo representa a arquitetura do projeto, destacando a aplicação do padrão **Factory Method** no sistema de notificações:
+
+<p align="center">
+  <img src="./Factorymethod-Notificador.png" alt="Diagrama de Classe - Factory Method Notificador" width="800"/>
+</p>
+
+
 
 ## 🚀 Funcionalidades <a name="funcionalidades"></a>
 
@@ -59,6 +63,13 @@ O **Factory Method** é um padrão criacional que define uma interface para cria
 - ✅ Interface única para todos os notificadores
 - ✅ Criação dinâmica via Factory Method
 - ✅ Fácil extensão para novos canais
+
+##  Tecnologias <a name="tecnologias"></a>
+- **Java 17+**
+- **JUnit 5** - Framework de testes
+- **Maven** - Gerenciamento de dependências
+- **Git** - Controle de versão
+
 
 ## 📊 Exemplo de Uso <a name="exemplo"></a>
 ```java
@@ -76,7 +87,6 @@ service.enviarNotificacao("Push", "token_dispositivo", "Nova atualização");
 ## 🧪 Testes <a name="testes"></a>
 
 ### Cobertura de Testes
-
 - ✅ **Testes de Criação**: Validam que a factory cria os objetos corretos
 - ✅ **Testes de Comportamento**: Verificam funcionamento de cada notificador
 - ✅ **Testes de Integração**: Validam sistema completo através do service

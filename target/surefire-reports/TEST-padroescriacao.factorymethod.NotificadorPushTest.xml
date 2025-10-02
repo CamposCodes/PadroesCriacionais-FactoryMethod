@@ -1,61 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="padroescriacao.factorymethod.NotificadorPushTest" time="0.013" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="padroescriacao.factorymethod.NotificadorPushTest" time="0.002" tests="2" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
-    <property name="java.specification.version" value="11"/>
-    <property name="sun.cpu.isalist" value=""/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/workspaces/PadroesCriacionais-FactoryMethod/target/test-classes:/workspaces/PadroesCriacionais-FactoryMethod/target/classes:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/home/codespace/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/home/codespace/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:"/>
-    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\gcamp\Videos\ASPECTOS-AVANÇADOS-ENG-SFTW\PadroesCriacionais-FactoryMethod\target\test-classes;C:\Users\gcamp\Videos\ASPECTOS-AVANÇADOS-ENG-SFTW\PadroesCriacionais-FactoryMethod\target\classes;C:\Users\gcamp\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\gcamp\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\gcamp\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\gcamp\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\gcamp\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gcamp\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\gcamp\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\gcamp\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://www.microsoft.com"/>
-    <property name="user.timezone" value=""/>
-    <property name="java.vm.specification.version" value="11"/>
-    <property name="os.name" value="Linux"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="/opt/java/11.0.14/lib"/>
-    <property name="sun.java.command" value="/workspaces/PadroesCriacionais-FactoryMethod/target/surefire/surefirebooter-20251001015823463_3.jar /workspaces/PadroesCriacionais-FactoryMethod/target/surefire 2025-10-01T01-58-23_314-jvmRun1 surefire-20251001015823463_1tmp surefire_0-20251001015823463_2tmp"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\gcamp\AppData\Local\Temp\surefire7357577933694808939\surefirebooter-20251002162654693_3.jar C:\Users\gcamp\AppData\Local\Temp\surefire7357577933694808939 2025-10-02T16-26-54_558-jvmRun1 surefire-20251002162654693_1tmp surefire_0-20251002162654693_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/workspaces/PadroesCriacionais-FactoryMethod/target/test-classes:/workspaces/PadroesCriacionais-FactoryMethod/target/classes:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/home/codespace/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/home/codespace/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:"/>
+    <property name="surefire.test.class.path" value="C:\Users\gcamp\Videos\ASPECTOS-AVANÇADOS-ENG-SFTW\PadroesCriacionais-FactoryMethod\target\test-classes;C:\Users\gcamp\Videos\ASPECTOS-AVANÇADOS-ENG-SFTW\PadroesCriacionais-FactoryMethod\target\classes;C:\Users\gcamp\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\gcamp\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\gcamp\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\gcamp\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\gcamp\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\gcamp\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\gcamp\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\gcamp\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/home/codespace"/>
-    <property name="user.language" value="en"/>
+    <property name="user.home" value="C:\Users\gcamp"/>
+    <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2022-02-08"/>
-    <property name="java.home" value="/opt/java/11.0.14"/>
-    <property name="file.separator" value="/"/>
-    <property name="basedir" value="/workspaces/PadroesCriacionais-FactoryMethod"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\gcamp\Videos\ASPECTOS-AVANÇADOS-ENG-SFTW\PadroesCriacionais-FactoryMethod"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/workspaces/PadroesCriacionais-FactoryMethod/target/surefire/surefirebooter-20251001015823463_3.jar"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\gcamp\AppData\Local\Temp\surefire7357577933694808939\surefirebooter-20251002162654693_3.jar"/>
+    <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="11.0.14.1+1-LTS"/>
-    <property name="user.name" value="codespace"/>
-    <property name="path.separator" value=":"/>
-    <property name="os.version" value="6.8.0-1030-azure"/>
+    <property name="java.runtime.version" value="21.0.7+6-LTS"/>
+    <property name="user.name" value="gcamp"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Microsoft-31205"/>
-    <property name="localRepository" value="/home/codespace/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="java.version" value="11.0.14.1"/>
-    <property name="user.dir" value="/workspaces/PadroesCriacionais-FactoryMethod"/>
+    <property name="java.vendor.version" value="Temurin-21.0.7+6"/>
+    <property name="localRepository" value="C:\Users\gcamp\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\gcamp\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="C:\Users\gcamp\Videos\ASPECTOS-AVANÇADOS-ENG-SFTW\PadroesCriacionais-FactoryMethod"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="sun.os.patch.level" value="unknown"/>
-    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.vendor" value="Microsoft"/>
-    <property name="java.vm.version" value="11.0.14.1+1-LTS"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\gcamp\bin;C:\Python313\Scripts;C:\Python313;C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot\bin;C:\Users\gcamp\AppData\Local\Programs\cursor\resources\app\bin;C:\MinGW\32bits\mingw32\bin;C:\MinGW\64bits\mingw64\mingw64\bin;C:\MinGW\64bits\mingw485\mingw64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\MinGW\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\TortoiseGit\bin;C:\msys64\mingw64\bin;C:\Users\gcamp\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.1\bin;C:\tools\Cmder;D:\CLion 2024.2.0.1\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin;C:\mysys64\mingw64\bin;C:\mysys64\ucrt64\bin;C:\Users\gcamp\AppData\Roaming\npm;C:\Users\gcamp\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\gcamp\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\msys64\mingw64\bin;C:\Users\gcamp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\gcamp\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.1\bin;C:\tools\Cmder;D:\CLion 2024.2.0.1\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin;C:\mysys64\mingw64\bin;C:\mysys64\ucrt64\bin;C:\Users\gcamp\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\gcamp\AppData\Roaming\npm;C:\Maven\apache-maven-3.9.10\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.7+6-LTS"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="55.0"/>
+    <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="deveValidarDestinatarioPush" classname="padroescriacao.factorymethod.NotificadorPushTest" time="0.001"/>
-  <testcase name="deveEnviarPush" classname="padroescriacao.factorymethod.NotificadorPushTest" time="0.002"/>
+  <testcase name="deveValidarDestinatarioPush" classname="padroescriacao.factorymethod.NotificadorPushTest" time="0"/>
+  <testcase name="deveEnviarPush" classname="padroescriacao.factorymethod.NotificadorPushTest" time="0"/>
 </testsuite>

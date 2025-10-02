@@ -1,6 +1,6 @@
-padroescriacao/factorymethod/NotificadorEmailTest.class
-padroescriacao/factorymethod/NotificacaoServiceTest.class
-padroescriacao/factorymethod/NotificadorWhatsAppTest.class
-padroescriacao/factorymethod/NotificadorFactoryTest.class
-padroescriacao/factorymethod/NotificadorPushTest.class
-padroescriacao/factorymethod/NotificadorSMSTest.class
+padroescriacao\factorymethod\NotificacaoServiceTest.class
+padroescriacao\factorymethod\NotificadorWhatsAppTest.class
+padroescriacao\factorymethod\NotificadorPushTest.class
+padroescriacao\factorymethod\NotificadorSMSTest.class
+padroescriacao\factorymethod\NotificadorFactoryTest.class
+padroescriacao\factorymethod\NotificadorEmailTest.class

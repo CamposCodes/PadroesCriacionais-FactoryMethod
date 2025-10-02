@@ -33,4 +33,11 @@ class NotificacaoServiceTest {
         String resultado = service.enviarNotificacao("WhatsApp", "+5511988887777", "Mensagem de teste");
         assertEquals("Mensagem WhatsApp enviada para +5511988887777 com sucesso", resultado);
     }
+
+    @Test
+    void deveEnviarNotificacaoPorTelegram() {
+        NotificacaoService service = new NotificacaoService();
+        String resultado = service.enviarNotificacao("Telegram", "@usuario_teste", "Mensagem de teste");
+        assertEquals("Telegram enviado para @usuario_teste com sucesso", resultado);
+    }
 }
